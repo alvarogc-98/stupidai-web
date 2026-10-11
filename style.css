@@ -1,7 +1,8 @@
 :root{--bg:#0d0b1f;--bg2:#1b1040;--pink:#f2599f;--violet:#9966f9;--text:#fff;--soft:#b9b4f0;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.1)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;min-height:100vh;color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;background:var(--bg) radial-gradient(900px 500px at 85% -5%,rgba(153,102,249,.35),transparent),radial-gradient(700px 500px at 0% 40%,rgba(242,89,159,.18),transparent);background-attachment:fixed}
+body{margin:0;min-height:100vh;color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;background:var(--bg)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(900px 500px at 85% -5%,rgba(153,102,249,.35),transparent 70%),radial-gradient(700px 500px at 0% 40%,rgba(242,89,159,.18),transparent 70%)}
 a{color:#d9b8ff}
 .wrap{max-width:960px;margin:0 auto;padding:0 22px}
 .nav{display:flex;align-items:center;gap:18px;padding:18px 0;flex-wrap:wrap}
